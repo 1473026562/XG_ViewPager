@@ -4,6 +4,7 @@
 //
 //  Created by 贾  on 16/4/25.
 //  Copyright © 2016年 XiaoGang. All rights reserved.
+//  github:https://github.com/jiaxiaogang/XG_ViewPager
 //
 
 #import <UIKit/UIKit.h>
@@ -16,14 +17,17 @@
 @protocol  XGSwitchBarDelegate<NSObject>
 
 @required
-- (void)xgSwitchBar:(XGSwitchBar *)switchBar didSelectIndex:(NSInteger)index animated:(BOOL)animated; //clickIndex
-- (XGSwitchBarCell*)xgSwitchBar:(XGSwitchBar *)switchBar cellForIndex:(NSInteger)index selected:(BOOL)selected;//cell获取
-- (CGFloat)xgSwitchBar:(XGSwitchBar *)switchBar widthForIndex:(NSInteger)index;                       //cell宽度
-- (NSInteger)numberOfCellsInViewPagerSwitchBar:(XGSwitchBar *)switchBar;                                     //cell个数
+- (void)xgSwitchBar:(XGSwitchBar *)switchBar didSelectIndex:(NSInteger)index animated:(BOOL)animated;
+- (XGSwitchBarCell*)xgSwitchBar:(XGSwitchBar *)switchBar cellForIndex:(NSInteger)index selected:(BOOL)selected;
+- (CGFloat)xgSwitchBar:(XGSwitchBar *)switchBar widthForIndex:(NSInteger)index;
+- (NSInteger)numberOfCellsInViewPagerSwitchBar:(XGSwitchBar *)switchBar;                                  
 
 
 @end
 
+/**
+ *  MARK:--------------------XGSwitchBar类(见Demo里的左右切换页面的横条)--------------------
+ */
 @interface XGSwitchBar : UIView
 
 @property (nonatomic , assign)id<XGSwitchBarDelegate>  delegate;

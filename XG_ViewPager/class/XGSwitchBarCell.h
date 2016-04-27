@@ -4,6 +4,7 @@
 //
 //  Created by 贾  on 16/4/25.
 //  Copyright © 2016年 XiaoGang. All rights reserved.
+//  github:https://github.com/jiaxiaogang/XG_ViewPager
 //
 
 #import <UIKit/UIKit.h>
@@ -23,9 +24,8 @@
 
 
 /**
- *  MARK:--------------------viewPagerSwitchBarItem父类--------------------
+ *  MARK:--------------------viewPagerSwitchBarItem父类类似UITableViewCell--------------------
  */
-
 @interface XGSwitchBarCell : UIView
 
 /**

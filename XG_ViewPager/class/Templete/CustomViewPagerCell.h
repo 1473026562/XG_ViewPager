@@ -4,10 +4,14 @@
 //
 //  Created by 贾  on 16/4/25.
 //  Copyright © 2016年 XiaoGang. All rights reserved.
+//  github:https://github.com/jiaxiaogang/XG_ViewPager
 //
 
 #import "XGViewPagerCell.h"
 
+/**
+ *  MARK:--------------------自定义ViewPagerCell必须继承自XGViewPagerCell--------------------
+ */
 @protocol CustomViewPagerCellDelegate <NSObject>
 
 -(void)customViewPagerCell_didScroll:(UIScrollView*)scrollView;

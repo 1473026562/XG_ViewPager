@@ -4,6 +4,7 @@
 //
 //  Created by 贾  on 16/4/25.
 //  Copyright © 2016年 XiaoGang. All rights reserved.
+//  github:https://github.com/jiaxiaogang/XG_ViewPager
 //
 
 #import "ViewController.h"
@@ -21,7 +22,7 @@
 
 @interface ViewController ()<XGViewPagerDelegate,XGSwitchBarDelegate,CustomViewPagerCellDelegate>
 
-@property (strong,nonatomic) NSMutableArray *titleDatas;        //存所有将显示的表类型
+@property (strong,nonatomic) NSMutableArray *titleDatas;            //存所有将显示的表类型
 @property (strong,nonatomic) XGViewPager  * viewPager;
 @property (strong,nonatomic) UILabel *header;
 @property (strong,nonatomic) XGSwitchBar *switchBar;                //顶部容器条
@@ -170,7 +171,7 @@
 {
     CustomViewPagerCell *cell = [[CustomViewPagerCell alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) withHeaderHeight:HeaderHeight];
     [cell setCustomViewPagerCellDelegate:self];
-    [cell setData:[[NSMutableArray alloc]initWithObjects:@"QQ:283636001",@"微信:jia2764894",@"手机:就不告诉你",@"本人很帅",@"不服来辩", @"111",@"222",@"333",@"QQ:283636001",@"微信:jia2764894",@"手机:就不告诉你",@"本人很帅",@"不服来辩", @"111",@"222",@"333",@"QQ:283636001",@"微信:jia2764894",@"手机:就不告诉你",@"本人很帅",@"不服来辩", @"111",@"222",@"333",nil]];
+    [cell setData:[[NSMutableArray alloc]initWithObjects:@"QQ:283636001",@"微信:jia2764894",@"手机:就不告诉你",@"讨论QQ群:193069075",@"本人很帅",@"不服来辩", @"111",@"222",@"333",@"QQ:283636001",@"微信:jia2764894",@"手机:就不告诉你",@"本人很帅",@"不服来辩", @"111",@"222",@"333",@"QQ:283636001",@"微信:jia2764894",@"手机:就不告诉你",@"本人很帅",@"不服来辩", @"111",@"222",@"333",nil]];
     
     if (index == 0) {
         [cell.tableView.tableHeaderView addSubview:self.header];

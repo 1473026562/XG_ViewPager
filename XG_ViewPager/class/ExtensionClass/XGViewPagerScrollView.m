@@ -4,6 +4,7 @@
 //
 //  Created by 贾  on 16/4/25.
 //  Copyright © 2016年 XiaoGang. All rights reserved.
+//  github:https://github.com/jiaxiaogang/XG_ViewPager
 //
 
 #import "XGViewPagerScrollView.h"
@@ -24,7 +25,7 @@
     return [super gestureRecognizerShouldBegin:gestureRecognizer];
 }
 
-//当左滑时,如果当前scrollView在最左滑;则继续手势到左滑退出页面;
+//当左滑时,如果当前scrollView在最左index==0时;再左滑不拦截controller.view手势;以使大多应用里的页面左滑返回功能有效;
 - ( BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
 {
     if ([gestureRecognizer isEqual:self.panGestureRecognizer]) {

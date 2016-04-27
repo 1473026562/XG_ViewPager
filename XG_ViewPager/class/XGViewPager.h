@@ -4,6 +4,7 @@
 //
 //  Created by 贾  on 16/4/25.
 //  Copyright © 2016年 XiaoGang. All rights reserved.
+//  github:https://github.com/jiaxiaogang/XG_ViewPager
 //
 
 #import <UIKit/UIKit.h>
@@ -68,10 +69,12 @@
 
 
 
-
+/**
+ *  MARK:--------------------XGViewPager类--------------------
+ *
+ *  虽然名字叫ViewPager;但实现并非使用android中的适配器模式,而是使用了ios开发者常用的代理来实现;
+ */
 @interface XGViewPager : UIView
-
-
 
 @property (nonatomic , assign) id<XGViewPagerDelegate> delegate;
 @property (strong,nonatomic) XGViewPagerScrollView *containerView;     //容器滚动器
